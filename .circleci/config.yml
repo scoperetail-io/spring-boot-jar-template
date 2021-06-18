@@ -12,6 +12,7 @@ workflows:
             - OSSRH
             - SLACK
             - ARTIFACTORY
+            - SONAR
           filters:
             branches:
               ignore:
