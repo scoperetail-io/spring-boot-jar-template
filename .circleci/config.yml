@@ -2,7 +2,7 @@
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 orbs:
-  marvel: scoperetail/marvel@2.1.0
+  marvel: scoperetail/marvel@dev:e5011f7
 
 workflows:
   build-and-test:
@@ -28,7 +28,7 @@ workflows:
               ignore:
                 - master
                 - /HOTFIX-.*/
-      - marvel/maven-release:
+      - marvel/maven-release-spring:
           context:
             - OSSRH
             - SLACK
